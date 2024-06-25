@@ -1,0 +1,106 @@
+.game {
+    width:100%;
+    display: flex;
+   justify-content: space-around;
+    align-items: center;
+    animation: game 3s ease-in-out;
+}
+@keyframes game {
+    0% {
+        opacity: 0;
+        transform: translatex(-60%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+.game-block {
+    width: 500px;
+    height: 500px;
+    border: 2px solid var(--dark-color);
+    position: relative;
+    background-color:var(--blue-color);
+    border-radius:25px;
+}
+
+.cub {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 99;
+}
+
+.point {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.controler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    flex-wrap: wrap-reverse;
+}
+
+.controler button {
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    color: wheat;
+    border-radius: 20px;
+}
+
+.game h1 {
+    background-color:var(--red-color);
+    width: 80px;
+    padding: 20px;
+    color:white;
+    text-align: center;
+    border-radius: 50%;
+    font-size:30px;
+}
+
+.pat {
+    height: 100%;
+    width: 30px;
+    background-color: black;
+    left: 250px;
+    position: relative;
+}
+
+.dur {
+    width: 30px;
+    height: 50px;
+    background-color:var(--blue-color);
+    position: absolute;
+}
+.play {
+    width: 200px;
+    background-color: var(--dark-color);
+    color: white;
+    border: none;
+    height: 45px;
+    font-size: 17px;
+    border-radius: 25px;
+    font-weight: bolder;
+}
+
+.play:hover {
+    background-color: white;
+    color: var(--blue-color);
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 1100px) {
+    .game {
+        display: flex;
+       flex-direction: column;
+       gap:30px;
+    }
+}

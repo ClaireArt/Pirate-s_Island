@@ -1,0 +1,30 @@
+.contacts,
+.contacts_menu {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: var(--font-family);
+    gap: 20px;
+    font-size: 18px;
+}
+
+.contacts>h1,
+.contacts_menu>h1 {
+    font-size: 25px;
+}
+
+.footer_contact {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+/* ---------------------Media------------------------ */
+
+@media only screen and (max-width: 1100px) {
+
+    .contacts,
+    .contacts_menu {
+        align-items: center;
+    }
+}

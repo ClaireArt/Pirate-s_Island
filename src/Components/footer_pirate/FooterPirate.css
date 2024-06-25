@@ -1,0 +1,63 @@
+.footer_pirate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer_logo {
+    max-width: 50px;
+    height: auto;
+    margin: -25px 0 -35px 0;
+    z-index: 1;
+}
+
+.footer_text {
+    font-size: 50px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    text-align: center;
+}
+
+.footer_text>div:first-child {
+    color: var(--blue-color);
+}
+
+.footer_text>h1:last-child {
+    color: var(--red-color);
+}
+
+.footer_text>div>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_text>div {
+    display: flex;
+    align-items: center;
+}
+
+.footer_geography {
+    position: relative;
+    max-width: 300px;
+}
+
+.footer_pirate>span {
+    color: white;
+    font-size: 30px;
+    font-family: var(--font-family);
+}
+
+.footer_icon_menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer_icon {
+    max-width: 30px;
+}

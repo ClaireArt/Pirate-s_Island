@@ -1,0 +1,126 @@
+.main_cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.main_cards>h1 {
+    color: var(--red-color);
+    font-family: var(--font-family);
+    font-size: 50px;
+    font-weight: bolder;
+    animation: h1 3s ease-in-out;
+}
+
+@keyframes h1 {
+    0% {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main_cards>span {
+    color: var(--blue-color);
+    font-family: var(--font-family);
+    font-size: 25px;
+    font-weight: bolder;
+    animation: span 3s ease-in-out;
+}
+
+@keyframes span {
+    0% {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cards_box {
+    display: flex;
+    width: 100%;
+    margin: 40px 0 0 0;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cards1 {
+    animation: cards1 2s ease-in-out;
+}
+
+.cards2 {
+    animation: cards1 2.5s ease-in-out;
+}
+
+.cards3 {
+    animation: cards1 3s ease-in-out;
+}
+
+@keyframes cards1 {
+    0% {
+        opacity: 0;
+        transform: translateY(-30%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes cards2 {
+    0% {
+        opacity: 0;
+        transform: translateY(-30%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes cards3 {
+    0% {
+        opacity: 0;
+        transform: translateY(-30%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cards {
+    max-width: 300px;
+    border-radius: 50px;
+    box-shadow: 4px 4px 8px grey;
+    ;
+}
+
+.cards>img {
+    border-radius: 40px;
+}
+
+/* ----------------------------Media---------------------------------- */
+
+@media only screen and (max-width: 1100px) {
+    .cards_box {
+        flex-direction: column;
+        gap: 30px;
+    }
+}

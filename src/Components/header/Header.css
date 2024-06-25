@@ -1,0 +1,146 @@
+header {
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    height:900px;
+}
+
+.header_market {
+    max-width: 200px;
+    height: auto;
+}
+
+.header_market_menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    animation: fadeInm2 3s ease-in-out;
+    position: absolute;
+    top: 300px;
+}
+
+.header_market_menu>div:first-child {
+    width: 180px;
+    height: auto;
+}
+
+.header_logo {
+    max-width: 50px;
+    height: auto;
+    margin: -35px 0 -75px 0;
+    z-index: 1;
+}
+
+.header_text {
+    font-size: 80px;
+    font-family: "Abril Fatface", serif;
+    font-weight: bolder;
+    position: absolute;
+    top: 0;
+    left: 80px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.header_text>div:first-child {
+    color: var(--blue-color);
+}
+
+.header_text>h1:last-child {
+    color: var(--red-color);
+}
+
+.header_text>div>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_text>div {
+    display: flex;
+    align-items: center;
+}
+
+@keyframes fadeInm {
+    0% {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInm2 {
+    0% {
+        opacity: 0;
+        transform: translateY(-80%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header_geography {
+    position: relative;
+    top: -35px;
+    max-width: 500px;
+    animation: fadeInm 2s ease-in-out;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 400px 0;
+    position: relative;
+}
+
+/* ------------------Media------------------------- */
+
+@media only screen and (max-width: 1100px) {
+    .header_geography {
+        top: 50px;
+        max-width: 300px;
+    }
+    header {
+        height:600px;
+    }
+
+    .header_text {
+        font-size: 45px;
+        font-family: "Abril Fatface", serif;
+        font-weight: bolder;
+        position: absolute;
+        top: 0;
+        left: 40px;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+
+    .header_logo {
+        max-width: 50px;
+        height: auto;
+        margin: -18px 0 -45px 0;
+        z-index: 1;
+    }
+
+    .header_market_menu {
+        position: absolute;
+        top: 300px;
+    }
+
+    .header_market {
+        max-width: 150px;
+        height: auto;
+    }
+}

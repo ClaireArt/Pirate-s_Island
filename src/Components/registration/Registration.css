@@ -1,0 +1,89 @@
+.reg {
+    width: 60%;
+    background-color: var(--red-color);
+    color: white;
+    border: none;
+    height: 45px;
+    font-size: 17px;
+    border-radius: 25px;
+    font-weight: bolder;
+}
+.reg:hover {
+    background-color: white;
+    color: var(--blue-color);
+    font-weight: bolder;
+}
+.registration {
+    width:500px;
+    background-color:var(--blue-color);
+    display: flex;
+    flex-direction:column;
+    gap:20px;
+}
+.registr_logo {
+    display:flex;
+    justify-content: space-between;
+    padding:20px 20px;
+}
+.registr_logo_text > span, .registr_logo_text >h1 {
+    font-size: 25px;
+}
+.registr_logo_delete {
+    font-size:25px;
+}
+.registr_border {
+    width:100%;
+    height:3px;
+    background-color: var(--red-color);
+}
+.registr_input {
+    width:100%;
+    display: flex;
+    gap:20px;
+}
+.registr_input > input {
+    width:50%;
+    height:40px;
+    font-size:20px;
+}
+.registration > form > input {
+    width:100%;
+    height:40px;
+    font-size:20px;
+}
+.registration > form {
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    padding:20px 20px;
+    align-items: center;
+    justify-content: center;
+}
+.birth_date {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.birth_date > select {
+    width:30%;
+    height:40px;
+    font-size:20px;
+}
+.registration > form > span {
+    font-size:25px;
+}
+.gender > div {
+    height:40px;
+    font-size:20px;
+    display:flex;
+    align-items: center;
+    gap:10px;
+    border:1px solid var(--dark-color);
+    padding:10px 10px;
+    border-radius: 10px;
+}
+.gender {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}

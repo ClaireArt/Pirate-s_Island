@@ -1,0 +1,17 @@
+.footer_mini {
+    width: 100%;
+    background-color: var(--red-color);
+    height: auto;
+    text-align: center;
+    padding:25px 0;
+}
+
+.footer_mini>span {
+    color: black;
+    font-family: var(--font-family);
+    font-size: 20px;
+}
+.footer_mini>span>a {
+    color:black;
+    font-size:20px;
+}

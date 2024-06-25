@@ -1,0 +1,21 @@
+footer {
+    width: 100%;
+    height: auto;
+    background-color: var(--blue-color);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 400px 20px 100px 20px;
+}
+
+/* ---------------------Media------------------------ */
+
+@media only screen and (max-width: 1100px) {
+    .footer {
+        flex-direction: column;
+        gap: 50px;
+        padding: 300px 20px 100px 20px;
+    }
+}
