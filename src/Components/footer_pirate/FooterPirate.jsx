@@ -3,9 +3,9 @@ import { comment, facebook, geography, logo, robot, youtube } from '../../Images
 import './FooterPirate.css';
 import { memo } from 'react';
 
-function FooterPirate({color, opacity}) {
+function FooterPirate() {
     return (
-        <div className='footer_pirate' style={{backgroundColor: color, opacity: opacity}}>
+        <div className='footer_pirate'>
             <div className='footer_geography'>
                 <img src={geography} />
                 <div className='footer_text'>

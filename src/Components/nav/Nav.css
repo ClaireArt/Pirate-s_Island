@@ -10,6 +10,7 @@ nav {
 
 .nav_icon {
     max-width: 50px;
+    cursor:pointer;
 }
 
 .nav_logo_menu>span,
@@ -41,18 +42,23 @@ nav {
     font-weight: bolder;
     text-align: center;
     position: absolute;
-    padding: 0 30px 30px 30px;
+    padding: 20px 20px;
     top: 0;
     left: 0;
     animation: fadeInm2 1s ease-in-out;
 }
 
 .delete {
-    font-size: 30px;
-    border: 2px solid var(--red-color);
-    width: 40px;
+    font-size: 25px;
+    border: 1px solid var(--red-color);
+    width: 30px;
+    height:30px;
     text-align: center;
-    border-radius: 50px;
+    border-radius: 50%;
+    cursor:pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes fadeInm2 {
@@ -62,5 +68,17 @@ nav {
 
     100% {
         opacity: 1;
+    }
+}
+
+/* ---------------------Media------------------------ */
+
+@media only screen and (max-width: 700px) {
+    .nav_icon_menu {
+        display:none;
+    }
+
+    .nav {
+       justify-content: center;
     }
 }

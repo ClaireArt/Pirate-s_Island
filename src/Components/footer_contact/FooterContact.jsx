@@ -1,9 +1,9 @@
 import React, { memo } from 'react';
 import './FooterContact.css';
 
-function FooterContact({color, opacity}) {
+function FooterContact() {
   return (
-    <div className='footer_contact' style={{backgroundColor: color, opacity: opacity}}>
+    <div className='footer_contact'>
       <div className='contacts'>
         <h1>Связаться</h1>
         <span>+7 123-456-7890</span>

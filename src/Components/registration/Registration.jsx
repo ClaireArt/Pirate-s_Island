@@ -9,7 +9,6 @@ function Registration({ registr, setRegistr }) {
     const endYear = 2024;
     const years = Array.from({ length: endYear - startYear + 1 }, (elem, index) => startYear + index);
 
-
     const handlesubmit = async (e) => {
         e.preventDefault();
         const obj = {
@@ -18,10 +17,9 @@ function Registration({ registr, setRegistr }) {
             mail: e.target[2].value,
             password: e.target[3].value,
         }
-        console.log(obj);
 
-       const res = await axios.post('https://659cfbcd633f9aee79085671.mockapi.io/posts', obj)
-       console.log(res, 'ola');
+        const res = await axios.post('https://659cfbcd633f9aee79085671.mockapi.io/posts', obj)
+        console.log(res, 'ola');
     }
 
 

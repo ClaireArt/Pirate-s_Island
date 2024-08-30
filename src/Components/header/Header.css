@@ -6,12 +6,13 @@ header {
     background-attachment: fixed;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    height:900px;
+    height: 900px;
 }
 
 .header_market {
     max-width: 200px;
     height: auto;
+    cursor:pointer;
 }
 
 .header_market_menu {
@@ -105,15 +106,16 @@ header {
     position: relative;
 }
 
-/* ------------------Media------------------------- */
+/* ---------------------response------------------------ */
 
 @media only screen and (max-width: 1100px) {
     .header_geography {
         top: 50px;
         max-width: 300px;
     }
+
     header {
-        height:600px;
+        height: 600px;
     }
 
     .header_text {

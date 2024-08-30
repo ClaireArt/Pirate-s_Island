@@ -10,6 +10,13 @@
     gap: 20px;
 }
 
+.footer_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
 .footer_content>form>section {
     display: flex;
     gap: 20px;
@@ -98,8 +105,34 @@
         align-items: center;
     }
 
-    .footer_input>form {
+    .footer_content {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer_content>form {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer_content>form>section {
+        flex-direction: column;
         align-items: center;
     }
 
+    .footer_content {
+        align-items: center;
+    }
+
+    .input_box>input {
+        width: 280px;
+    }
+
+    .footer_content>form>textarea {
+        width:280px;
+    }
+
+    .but>button {
+        width: 160px;
+    }
 }

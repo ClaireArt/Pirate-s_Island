@@ -75,6 +75,7 @@
 .main_video_market {
     max-width: 150px;
     height: auto;
+    cursor:pointer;
 }
 
 .main_video_market_box>div:first-child {
@@ -124,7 +125,7 @@
     bottom: -350px;
 }
 
-/* ---------------------Media------------------------ */
+/* ---------------------response------------------------ */
 
 @media only screen and (max-width: 1500px) {
     .main_video_text_ship {

@@ -3,18 +3,16 @@ import './FooterInput.css';
 import { memo } from 'react';
 import Registration from '../registration/Registration';
 
-function FooterInput({ color, opacity }) {
+function FooterInput() {
     const [registr, setRegistr] = useState(false);
 
     const handleClick = () => {
         setRegistr(true);
-        opacity(0.5);
-        color('grey');
     }
 
     return (
         <div className='footer_input'>
-            <div className='footer_content' style={{backgroundColor: color, opacity: opacity}}>
+            <div className='footer_content'>
                 <h1>Написать нам</h1>
                 <form>
                     <section>

@@ -21,10 +21,13 @@ function Nav() {
         <nav>
             <div className='container'>
                 <section className='nav'>
-                    {display && <div className='sale' style={{ display: del ? 'none' : 'block'}}>
-                        <div className="delete" onClick={() => deleteClick()}><span>x</span></div>
-                        <span>Sale for all Games -50%</span>
-                    </div>}
+                    {
+                        display &&
+                        <div className='sale' style={{ display: del ? 'none' : 'block' }}>
+                            <div className="delete" onClick={() => deleteClick()}><span>x</span></div>
+                            <span>Sale for all Games -50%</span>
+                        </div>
+                    }
                     <div className='nav_logo_menu'>
                         <div className='nav_logo'><img src={logo} /></div>
                         <span>Pirate's Island</span>
